@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 header{
-    background-color: white;
-    filter: blur(0.1px);
-    opacity: 0.95;
+    background-color: black;
     height: 90px;
     display: flex;
     align-items: center;
@@ -15,6 +13,11 @@ header{
     width: 100vw;
     z-index: 10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    backdrop-filter: opacity(0.1);
+}
+body{
+    background: linear-gradient(rgb(22, 22, 22), rgb(36, 34, 34));
 }
 .English , .Search{
 color: rgb(0, 95, 196);
@@ -23,13 +26,13 @@ text-decoration: none;
 .Games,.Apps,.MoviesAndSeries,.Developers{
     text-decoration: none;
         font-size: 21px;
-        color: rgb(0, 0, 0);
+        color: linear-gradient(deeppink, orangered);;
         margin-left: 20px;
 }
 .main-box{
     position: relative;
     display: flex;
-    height: 720px ;
+    height: 100vh; ;
     width: 500px ;
     /* background: linear-gradient(deeppink, orangered); */
     border-radius: 40px;
@@ -42,13 +45,12 @@ text-decoration: none;
     display: flex;
     justify-content: space-around;
     justify-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     overflow: hidden;
     
 }
 .waterfall-line-1{
-    /* background-color: aqua; */
-        
+    /* background-color: aqua; */ 
 }
 .waterfall-line-2{
     /* background-color: rgb(255, 0, 72); */
@@ -63,9 +65,61 @@ text-decoration: none;
     margin-left: 75%;
 }
 div img {
-    /* display: flex; */
-
-    object-fit: cover;
-    
+    display: flex;
+    flex-wrap: wrap;
 }
-
+.waterfall-img-1 {
+    animation: move-image-1 12s infinite linear, fade-img 4s linear;
+}
+.waterfall-img-2 {
+    animation: move-image-2 9s infinite linear, fade-img 4s linear;
+}
+.waterfall-img-3 {
+    animation: move-image-3 13s infinite linear, fade-img 4s linear;
+}
+.waterfall-img-4 {
+    animation: move-image-4 10s infinite linear, fade-img 4s linear;
+}
+@keyframes fade-img {
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    }
+}
+@keyframes move-image-1 {
+    0% { 
+        transform: translateY(-400%); 
+    } 
+    100% { 
+        transform: translateY(0%); 
+    }
+}
+@keyframes move-image-2 {
+    0% { 
+        transform: translateY(-400%); 
+    } 
+    100% { 
+        transform: translateY(0%); 
+    }
+}
+@keyframes move-image-3 {
+    0% { 
+        transform: translateY(-400%); 
+    } 
+    100% { 
+        transform: translateY(0%); 
+    }
+}
+@keyframes move-image-4 {
+    0% { 
+        transform: translateY(-400%); 
+    } 
+    100% { 
+        transform: translateY(0%); 
+    }
+}
+.English:hover, .Search:hover, .Developers:hover, .MoviesAndSeries:hover, .Apps:hover, .Games:hover {
+    color: rgb(255, 0, 0);
+}
