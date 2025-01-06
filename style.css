@@ -4,17 +4,16 @@
     box-sizing: border-box;
 }
 header{
-    background-color: black;
-    height: 90px;
+    height: 80px;
     display: flex;
-    align-items: center;
-    gap: 20px;
     position: fixed;
     width: 100vw;
     z-index: 10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    backdrop-filter: opacity(0.1);
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: opacity(0.2);
+    backdrop-filter: blur(9px);
+    flex-wrap:wrap ;
 }
 body{
     background: linear-gradient(rgb(22, 22, 22), rgb(36, 34, 34));
@@ -22,12 +21,31 @@ body{
 .English , .Search{
 color: rgb(0, 95, 196);
 text-decoration: none;
+font-family:monospace;
 }
-.Games,.Apps,.MoviesAndSeries,.Developers{
+.English{
+    margin-left: 92px;
+    margin-top: 20.5px;
+    font-size: 18px;
+}
+.Search{
+    margin-left: 15px;
+    margin-top:20px ;
+    font-size: 24px;
+}
+.Games, .Apps, .MoviesAndSeries, .Developers {
     text-decoration: none;
-        font-size: 21px;
-        color: linear-gradient(deeppink, orangered);;
-        margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    margin-top: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Games, .Apps, .MoviesAndSeries{
+    margin-left: 35px;
+}
+.Developers{
+    margin-left: 30px;
 }
 .main-box{
     position: relative;
@@ -69,16 +87,16 @@ div img {
     flex-wrap: wrap;
 }
 .waterfall-img-1 {
-    animation: move-image-1 12s infinite linear, fade-img 4s linear;
+    animation: move-image-1 12s infinite linear reverse, fade-img 4s linear;
 }
 .waterfall-img-2 {
-    animation: move-image-2 9s infinite linear, fade-img 4s linear;
+    animation: move-image-2 9s infinite linear reverse, fade-img 4s linear;
 }
 .waterfall-img-3 {
-    animation: move-image-3 13s infinite linear, fade-img 4s linear;
+    animation: move-image-3 13s infinite linear reverse, fade-img 4s linear;
 }
 .waterfall-img-4 {
-    animation: move-image-4 10s infinite linear, fade-img 4s linear;
+    animation: move-image-4 10s infinite linear reverse, fade-img 4s linear;
 }
 @keyframes fade-img {
     0% { 
