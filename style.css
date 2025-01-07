@@ -7,7 +7,7 @@ header{
     height: 80px;
     display: flex;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.8);
@@ -24,12 +24,12 @@ text-decoration: none;
 font-family:monospace;
 }
 .English{
-    margin-left: 92px;
+    margin-left: 6%;
     margin-top: 20.5px;
     font-size: 18px;
 }
 .Search{
-    margin-left: 15px;
+    margin-left: 1.2%;
     margin-top:20px ;
     font-size: 24px;
 }
@@ -42,7 +42,7 @@ font-family:monospace;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .Games, .Apps, .MoviesAndSeries{
-    margin-left: 35px;
+    margin-left: 2.9%;
 }
 .Developers{
     margin-left: 30px;
@@ -54,7 +54,7 @@ font-family:monospace;
     width: 500px ;
     /* background: linear-gradient(deeppink, orangered); */
     border-radius: 40px;
-    margin-left: 5vw;
+    margin-left: 2%;
 }
 .main-box div{
     position: absolute ;
